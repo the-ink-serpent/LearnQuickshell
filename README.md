@@ -1,0 +1,2 @@
+# LearnQuickshell
+Learn Quickshell
