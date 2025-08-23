@@ -1,0 +1,10 @@
+[config]
+
+[templates.hyprland]
+input_path = 'templates/quickshell_template.conf'
+output_path = '~/.config/quickshell/SerpentRice/MatugenColors.qml'
+
+[templates.quickshell]
+input_path = 'templates/hyprland_template.conf'
+output_path = '~/.config/hypr/hyprland/matugen-colors.conf'
+post_hook = 'hyprctl reload'
