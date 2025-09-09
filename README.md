@@ -8,7 +8,7 @@
 
 If you don't want to use matugen and go with pywal, I have added a template file; put it in the ~/.config/wal/template folder and run the "wal -i <path>" command, it will generate the template file in the .cache pywal directory.
 
-I have also added a shell script that creates symlinks(hard) for the .cache color files generated to the respective .config app directory.
+I have also added a shell script that creates symlinks(hard) for the .cache color files generated to the respective .config app directory. just run it after the wal command, once the color files get generated. Change the paths in the scripts if necessary.
 
 don't be afraid, if you break anything just reinstall arch 🤣🤣🤣
 
