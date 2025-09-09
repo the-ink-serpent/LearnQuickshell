@@ -1,0 +1,154 @@
+format = """
+[](color2)\
+$os\
+$username\
+[](bg:color11 fg:color2)\
+$directory\
+[](fg:color11 bg:color5)\
+$git_branch\
+$git_status\
+[](fg:color5 bg:color5)\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+$scala\
+[](fg:color5 bg:color5)\
+$docker_context\
+[](fg:color5 bg:color1)\
+$time\
+[ ](fg:color1)\
+"""
+
+palette = 'pywalcolors'
+
+[palettes.pywalcolors]
+background = "{background}"
+foreground = "{foreground}"
+color0 = "{color0}"
+color1 = "{color1}"
+color2 = "{color2}"
+color3 = "{color3}"
+color4 = "{color4}"
+color5 = "{color5}"
+color6 = "{color6}"
+color7 = "{color7}"
+color8 = "{color8}"
+color9 = "{color9}"
+color10 = "{color10}"
+color11 = "{color11}"
+color12 = "{color12}"
+color13 = "{color13}"
+color14 = "{color14}"
+color15 = "{color15}"
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# You can also replace your username with a neat symbol like   or disable this
+# and use the os module below
+[username]
+show_always = true
+format = '[$user ](bg:color2 fg:color14)'
+disabled = false
+
+# An alternative to the username module which displays a symbol that
+# represents the current operating system
+[os]
+style = "bg:#9A348E"
+disabled = true # Disabled by default
+
+[directory]
+format = "[ $path ](bg:color11 fg:color14)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = " 󰈙 "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important 󰈙 " = " 󰈙 "
+
+[git_branch]
+symbol = ""
+format = '[ $symbol $branch ](bg:color5 fg:color14)'
+
+[git_status]
+format = '[$all_status$ahead_behind ](bg:color5 fg:color14)'
+
+[c]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[cpp]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[elixir]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[elm]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[golang]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[gradle]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[haskell]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[java]
+symbol = " "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[julia]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[nodejs]
+symbol = ""
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[nim]
+symbol = "󰆥 "
+style = "bg:#86BBD8"
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[rust]
+symbol = ""
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[scala]
+symbol = " "
+format = '[ $symbol ($version) ](bg:color5 fg:color14)'
+
+[docker_context]
+symbol = " "
+format = '[ $symbol $context ](bg:color5 fg:color14)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[ $time ](bg:color1 fg:color14)'
