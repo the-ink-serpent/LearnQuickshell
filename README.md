@@ -12,4 +12,6 @@ I have also added a shell script that creates symlinks(hard) for the .cache colo
 
 don't be afraid, if you break anything just reinstall arch 🤣🤣🤣
 
+<img width="1366" height="768" alt="20250909_20h24m27s_grim" src="https://github.com/user-attachments/assets/e5f20346-0988-448e-adb2-42f7e2c31038" />
+
 <img width="1366" height="768" alt="20250823_13h10m14s_grim" src="https://github.com/user-attachments/assets/dec6c51f-3faa-41d9-95f7-c9679da87d41" />
