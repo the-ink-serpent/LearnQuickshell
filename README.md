@@ -6,7 +6,7 @@
 
 ###---Hey---###
 
-If you don't want to use matugen and go with pywal, I have added a template file, it generates a qml file for quickshell as it pywal does not generate it by default; put it in the ~/.config/wal/template folder and run the "wal -i <path>" command, it will generate the template file in the .cache pywal directory.
+If you don't want to use matugen and go with pywal, I have added a template file, it generates a qml file for quickshell as it pywal does not generate it by default (also have a starship config template modified from a preset); put it in the ~/.config/wal/template folder and run the "wal -i <path>" command, it will generate the template file in the .cache pywal directory.
 
 I have also added a shell script that creates symlinks(hard) for the .cache color files generated to the respective .config app directory. just run it after the wal command, once the color files get generated. Change the paths in the scripts if necessary.
 
